@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD: Gaming Store App</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="gamingCode">Game Code</label>
+                        <input type="text" name="gamingCode" id="gamingCode">
+                    </div>
+                    <div>
+                        <label for="nintendoProduct">Nintendo Game Name</label>
+                        <input type="text" name="nintendoProduct" id="nintendoProduct">
+                    </div>
+                    <div>
+                        <label for="genre">Genre</label>
+                        <input type="number" name="genre" id="genre">
+                    </div>
+                    <div>
+                        <label for="gamePrice">Price</label>
+                        <input type="number" name="gamePrice" id="gamePrice">
+                    </div>
+
+                    <div class="form-action--button">
+                        <input type="Submit" value="Submit">
+                        <input type="Reset" value="Reset">
+                    </div>
+                </form>
+
+            </td>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Game Code</th>
+                        <th>Nintendo Game Name</th>
+                        <th>Genre</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
